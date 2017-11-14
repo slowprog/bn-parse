@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\Core\\": "app/Core",
+            "App\\Controllers\\": "app/Controllers",
+            "App\\Model\\": "app/Model"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "zomberg/phpquery": "dev-master"
+    }
+}

@@ -1,0 +1,19 @@
+.DS_Store
+/web/bundles/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/app/phpunit.xml
+!app/Resources/views/.gitkeep
+/build/
+/vendor/
+/bin/
+/composer.phar
+/web/assets/*
+!web/assets/.gitkeep
+# Из дополнения symfony-collection
+/app/Resources/views/jquery.collection.html.twig
+js/

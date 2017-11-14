@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+    app:
+        container_name: bn-parse.app
+        image: richarvey/nginx-php-fpm:latest
+        restart: always
+        environment:
+            WEBROOT: '/var/www/html/src/public'
+        volumes:
+            - ./:/var/www/html/src
+        ports:
+            - 8090:80
+        command:
+            - /bin/sh
+            - -c
+            - |
+                composer install --working-dir=/var/www/html/src
+                /start.sh
